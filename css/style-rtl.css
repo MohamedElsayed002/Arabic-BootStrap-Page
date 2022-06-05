@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', 'sans-serif';
+}
+
+:root {
+    --mainColor: #ffc527
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.navbar {
+    box-shadow: 1px 2px #ebebeb;
+}
+
+.home {
+    padding: 1px;
+    height: 600px;
+    background-size: cover;
+    background-image: url('../imgs/biggest_oil_and_gas_companies.jpg');
+}
+
+.home-item {
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 400px;
+    }
+    .home-item {
+        width: 100%;
+    }
+}
+
+.home-item h2 {
+    color: white;
+    font-size: 45px;
+}
+
+.home-item p {
+    color: white;
+    font-size: 20px;
+}
+
+.section__title {
+    position: relative;
+}
+
+.section__title:after {
+    content: '';
+    display: block;
+    width: 20%;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -10px;
+    height: 5px;
+    background-color: var(--mainColor);
+}
+
+.about__item {
+    margin: 50px 0;
+}
+
+.news .news-left {
+    display: flex;
+    align-items: center;
+}
+
+.news .news-left img {
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+.subscribe {
+    height: 450px;
+    background-image: url(../imgs/istockphoto-1215844007-170667a.jpg);
+    background-size: cover;
+    padding: 1px;
+    position: relative;
+}
+
+.subscribe__item {
+    width: 50%;
+    /*margin: 100px auto;
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: red;
+}
+
+.subscribe__item h2 {
+    font-size: 40px;
+}
+
+.subscribe__item .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe__item .form input {
+    width: 80%;
+}
+
+.subscribe__item button {
+    width: 15%;
+}
+
+@media (max-width: 768px) {
+    .subscribe__item {
+        width: 80%;
+    }
+    .subscribe__item .form {
+        flex-direction: column;
+    }
+    .subscribe__item .form input {
+        width: 100%;
+    }
+    .subscribe__item .form button {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #071c33;
+    color: white;
+}
+
+.footer .footer__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer_item img {
+    background-color: white;
+    color: #222;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-left img {
+    /* max-width: 200px; */
+    margin-left: 10px;
+    width: 100px;
+}
+
+
+/* blog */
+
+.breadcrumb {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+}
+
+.blog .jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.blog .jumbotron .blog-desc {
+    width: 55%;
+}
+
+.blog .jumbotron .blog-img {
+    width: 35%;
+}
+
+.pagination {
+    width: 50%;
+    margin: 50px auto;
+}
